@@ -1,0 +1,6 @@
+{
+    "onLoginResp":{
+        "required string msg":1,
+        "repeated int32 list":2
+    }
+}

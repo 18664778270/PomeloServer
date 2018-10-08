@@ -1,0 +1,6 @@
+{
+    "gate.gateHandler.queryEntry":{
+        "required int32 uid": 1,
+        "required int32 openId":2
+    }
+}
