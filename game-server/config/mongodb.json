@@ -3,7 +3,7 @@
     "host":"127.0.0.1",
     "port":27017,
     "maxConnes":10,
-    "username":"dbadmin",
+    "username":"admin",
     "password":"qwe123456",
     "timeout":30000
 }

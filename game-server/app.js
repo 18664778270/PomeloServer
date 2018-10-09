@@ -1,10 +1,11 @@
-var pomelo = require('pomelo');
-var errorHandler = require('./app/servers/error/handler/errorHandler');
+let pomelo = require('pomelo');
+let errorHandler = require('./app/servers/error/handler/errorHandler');
+let fs = require("fs")
 let abuseFilter = require("./app/servers/chat/filter/abuseFilter")
 /**
  * Init app for client.
  */
-var app = pomelo.createApp();
+let app = pomelo.createApp();
 
 
 function loader(){
@@ -39,11 +40,11 @@ function init(){
         heartbeat : 3,
         useDict : true,
         // useProtobuf : true,
-        // ssl: {
-        //   type: 'wss',
-        // 	key: fs.readFileSync('./../shared/server.key'),
-        //   cert: fs.readFileSync('./../shared/server.crt'),
-        // }
+        ssl: {
+          type: 'wss',
+        	key: fs.readFileSync('./../shared/2_studiototom.cn.key'),
+          cert: fs.readFileSync('./../shared/1_studiototom.cn_bundle.crt'),
+        }
       });
   });
 
