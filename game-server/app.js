@@ -29,6 +29,7 @@ function init(){
         connector : pomelo.connectors.hybridconnector,
         heartbeat : 3,
         useDict : true,
+        useCrypto: true,
         // useProtobuf : true,
         ssl: {
           type: 'wss',
